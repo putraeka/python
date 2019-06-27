@@ -13,8 +13,11 @@ soup = BeautifulSoup(page.content, 'html.parser')
 title = soup.find(id="productTitle").get_text()
 #price = soup.find('div', attrs={id="olp-sl-new-used", "class_":"a-color-price"}).get_text()
 #pricegroup = soup.find(id="olp-sl-new-used")
-price = soup.find_all(id="productTitle", {'class': 'a-color-price'}) 
+#price = soup.find_all(id="productTitle", {'class': 'a-color-price'}) 
 #converted_price = price[0:8]
 
-print(title.strip())
+#print(title.strip())
+#print(price)
+
+price = soup.find('olp-padding-right')
 print(price)
