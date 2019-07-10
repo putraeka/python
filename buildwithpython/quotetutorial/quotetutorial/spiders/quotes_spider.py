@@ -1,4 +1,5 @@
 import scrapy
+from ..items import QuotetutorialItem
 
 class quoteSpider(scrapy.Spider):
     name = 'quotes'
@@ -8,13 +9,16 @@ class quoteSpider(scrapy.Spider):
     
     def parse(self, response):
         # title_home = response.css('title::text').extract()
+        items = QuotetutorialItem()
+        
         all_div_quotes = response.css('div.quote')
         for quotes in all_div_quotes:
             title = quotes.css("span.text::text").extract()
             author = quotes.css(".author::text").extract()
             tags = quotes.css(".tag::text").extract()
-            yield {
-                'title': title,
-                'author': author,
-                'tags': tags
-                }
+
+            items['title'] = title
+            items['author'] = author
+            items['tag'] = tags
+
+            yield items
