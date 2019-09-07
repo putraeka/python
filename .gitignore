@@ -3,3 +3,6 @@ dev-ed/geckodriver.log
 jorge-escobar/simple_flask_app/__pycache__/*
 jorge-escobar/simple_flask_app/venv/*
 jorge-escobar/simple_flask_app/.vscode/*
+red-eye-coder-club/telegram-desktop/venv/*
+red-eye-coder-club/telegram-desktop/bot/tokens.py
+
