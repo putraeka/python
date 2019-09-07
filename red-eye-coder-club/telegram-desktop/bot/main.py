@@ -11,10 +11,6 @@ from flask_sslify import SSLify
 from tokens import cmc_token
 from tokens import telegram_token
 
-# telegram Api
-# https://api.telegram.org/bot948146242:AAHXZET2uYfQ7321FHAcqvQQbbTfY7xsK70/getUpdates
-# https://api.telegram.org/bot948146242:AAHXZET2uYfQ7321FHAcqvQQbbTfY7xsK70/sendMessage?chat_id=174709034&text=hello%20user
-# https://api.telegram.org/bot948146242:AAHXZET2uYfQ7321FHAcqvQQbbTfY7xsK70/setWebhook?url=https://quarum.serveo.net/
 # Codes
 
 app = Flask(__name__)
