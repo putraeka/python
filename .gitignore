@@ -5,4 +5,4 @@ jorge-escobar/simple_flask_app/venv/*
 jorge-escobar/simple_flask_app/.vscode/*
 red-eye-coder-club/telegram-desktop/venv/*
 red-eye-coder-club/telegram-desktop/bot/tokens.py
-
+red-eye-coder-club/telegram-desktop/bot/__pycache__/*
